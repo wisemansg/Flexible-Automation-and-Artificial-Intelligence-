@@ -1,68 +1,147 @@
-FLEXIBLE AUTOMATION AND ARTIFICIAL INTELLIGENCE (AI)
 
-📘 Module 1 Summary — Automation, Model Estimation and Machine Learning
+# Flexible Automation and Artificial Intelligence (AI) 🤖⚙️
 
-Module 1 focused on evaluating how different data balancing techniques affect the performance of a machine learning classifier. The dataset consisted of global GDP information from 1960 to 2020, and the goal was to predict the state (region/continent) based on numerical features. The dataset exhibited a significant class imbalance, prompting the need for balancing strategies before model training.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Machine%20Learning-FF6F00?logo=scikitlearn&logoColor=white" />
+  <img src="https://img.shields.io/badge/Random%20Forest-4CAF50?style=flat" />
+  <img src="https://img.shields.io/badge/Robotics-P--rob%202-FF5722?style=flat" />
+  <img src="https://img.shields.io/badge/Artificial%20Intelligence-9C27B0?logo=ai&logoColor=white" />
+  <img src="https://img.shields.io/badge/Manufacturing-2196F3?style=flat" />
+</p>
 
-Four balancing approaches were implemented in Python using Random Forest as the classifier:
+---
 
--Baseline (No Balancing)
--Oversampling (Manual Duplication)
--Undersampling
--Class-Weight Adjustment
+This project explores the integration of **Flexible Automation** and **Artificial Intelligence** through three comprehensive modules covering Machine Learning for imbalanced data, industrial robotics, and the transformative role of AI in modern manufacturing.
 
-After splitting and preprocessing the data, each method was tested and evaluated using accuracy. The results showed that Class-Weight Adjustment provided the best performance, achieving an accuracy of 0.4295, slightly outperforming the baseline and demonstrating improved handling of minority classes. Oversampling provided no meaningful improvement, while undersampling significantly reduced performance due to information loss.
+## 📘 Module 1 — Automation, Model Estimation and Machine Learning
 
-The main takeaway is that adjusting class weights during training is an effective and computationally efficient method for handling imbalanced classification problems without modifying the dataset directly. For future experimentation, the module recommends exploring advanced oversampling techniques such as SMOTE or ADASYN.
+Module 1 focused on evaluating how different data balancing techniques affect the performance of a machine learning classifier. The dataset consisted of global GDP information from 1960 to 2020, with the goal of predicting the state (region/continent) based on numerical features. The dataset exhibited a significant class imbalance, making balancing strategies essential before model training.
 
+### Balancing Techniques Implemented
 
-🤖 Module 2 Summary — Robotics (Block Manipulation Using P-rob 2)
+Four different approaches were tested using **Random Forest** as the classifier in Python:
 
-Module 2 demonstrated the use of the P-rob 2 industrial robot to complete a structured manipulation task involving wooden blocks. The robot was programmed to perform two key operations:
+- Baseline (No Balancing)
+- Oversampling (Manual Duplication)
+- Undersampling
+- Class-Weight Adjustment
 
-1. Transfer three blocks from one side of a divider to an inclined ramp.
+### Key Results
+
+After proper data splitting and preprocessing, each method was evaluated using accuracy:
+
+| Method                      | Accuracy   | Observation                              |
+|----------------------------|------------|------------------------------------------|
+| Baseline (No Balancing)    | —          | Reference performance                    |
+| Oversampling               | —          | No meaningful improvement                |
+| Undersampling              | Lower      | Significant performance drop (information loss) |
+| **Class-Weight Adjustment**| **0.4295** | **Best performance**                     |
+
+### Main Takeaway
+
+**Class-Weight Adjustment** proved to be the most effective and computationally efficient method for handling imbalanced classification problems. It improved minority class recognition without artificially modifying the dataset.
+
+**Recommendation for future work:** Explore advanced oversampling techniques such as **SMOTE** or **ADASYN**.
+
+---
+
+## 🤖 Module 2 — Robotics (Block Manipulation Using P-rob 2)
+
+Module 2 demonstrated the practical application of industrial robotics using the **P-rob 2** robot to perform a structured block manipulation task.
+
+### Task Description
+
+The robot was programmed to complete two main operations:
+
+1. Transfer three wooden blocks from one side of a divider onto an inclined ramp.
 2. Return the blocks and stack them vertically in a stable configuration.
 
-The robot was controlled using Python, leveraging predefined motion paths, gripper commands, and pose transitions. The project emphasized smooth operation, minimal rotation, efficient motion planning, and safe object handling.
+### Technical Approach
 
-Execution was successful across all stages, with the robot performing precise pick, place, and stacking actions without collisions or dropped blocks. The system demonstrated effective path planning, reliable sensor usage, and strong operational consistency. The project highlights the P-rob 2’s suitability for repetitive industrial tasks requiring precision, safety, and structured motion control.
+- Controlled entirely with **Python**
+- Used predefined motion paths, gripper commands, and pose transitions
+- Emphasis on:
+  - Smooth and efficient motion planning
+  - Minimal unnecessary rotation
+  - Safe object handling
+  - Collision avoidance
 
-Overall, Module 2 validated that robotics can efficiently automate manipulation tasks with high repeatability, reinforcing their role in modern manufacturing environments.
+### Results
 
+The execution was fully successful:
+- Precise pick-and-place operations
+- Stable vertical stacking
+- No collisions or dropped blocks
+- High repeatability and operational consistency
 
-🤖 Module 3 Summary — Artificial Intelligence in Manufacturing Engineering
+### Conclusion of Module 2
 
-Module 3 explored the transformative role of artificial intelligence (AI) in modern manufacturing, highlighting its evolution, applications, benefits, challenges, and future directions. AI has advanced from simple automation to sophisticated machine learning (ML), deep learning, and predictive analytics, enabling smart factories, human-robot collaboration (HRC), and digital twin simulations.
+The P-rob 2 successfully demonstrated its suitability for repetitive industrial tasks requiring precision, safety, and structured motion control. This validates the strong role of robotics in modern flexible manufacturing environments.
 
-Key Highlights:
+---
 
-AI Evolution & Applications: Predictive maintenance using real-time sensor data to reduce downtime.
-Quality control through image and sensor analysis for defect detection.
-Robotics and automation, including collaborative robots, to enhance productivity and safety.
-Digital twins for virtual testing and optimization of processes.
+## 🧠 Module 3 — Artificial Intelligence in Manufacturing Engineering
 
-Technologies & Innovations: Deep learning models (CNNs, RNNs, LSTMs, GANs, Autoencoders) for complex task handling.
-Explainable AI (XAI) tools to ensure model transparency and trustworthiness.
-Edge AI for real-time decision-making and improved data privacy.
-Integration with IoT, SCADA, MES, and Computer Vision Systems for comprehensive data collection and monitoring.
+Module 3 provided a comprehensive overview of how Artificial Intelligence is transforming modern manufacturing — from traditional automation to intelligent, adaptive, and sustainable production systems.
 
-Benefits of AI in Manufacturing: Increased productivity and operational efficiency.
-Cost savings through optimized processes and reduced waste.
-Improved product quality and real-time defect detection.
-Enhanced safety and sustainability, supporting energy efficiency and eco-friendly practices.
-Agility in responding to market demands through predictive analytics.
+### Key Areas Covered
 
-Challenges & Constraints: High initial investment in infrastructure, model development, and training.
-Data quality and integration complexities with legacy systems.
-Cybersecurity risks and resistance to change among the workforce.
-Ethical concerns related to bias, transparency, and responsible AI governance.
+**AI Evolution & Core Applications**
+- Predictive maintenance using real-time sensor data
+- Automated quality control via computer vision and sensor analysis
+- Collaborative robots (Cobots) and human-robot collaboration (HRC)
+- Digital Twin technology for virtual simulation and optimization
 
-Future Directions: Autonomous factories with minimal human intervention.
-Advanced predictive maintenance for longer asset life and lower downtime.
-Personalized manufacturing driven by real-time AI analytics.
-Expansion of collaborative AI systems and edge computing to improve responsiveness and privacy.
-Increased focus on sustainability and circular economy practices.
+**Advanced Technologies**
+- Deep Learning models (CNNs, RNNs, LSTMs, GANs, Autoencoders)
+- Explainable AI (XAI)
+- Edge AI for real-time decision making
+- Integration with IoT, SCADA, MES, and Computer Vision systems
 
-Conclusion:
+### Benefits of AI in Manufacturing
 
-AI is redefining manufacturing by enabling intelligent, adaptable, and sustainable production environments. While challenges remain, its integration supports the development of flexible, human-centered, and efficient industrial systems, paving the way for a robust, innovative, and sustainable manufacturing future.
+- Higher productivity and operational efficiency
+- Significant cost reduction and waste minimization
+- Improved product quality through real-time defect detection
+- Enhanced workplace safety
+- Greater sustainability and energy efficiency
+- Increased agility to respond to market changes
+
+### Challenges
+
+- High initial investment costs
+- Data quality and integration with legacy systems
+- Cybersecurity risks
+- Workforce resistance to change
+- Ethical concerns (bias, transparency, governance)
+
+### Future Directions
+
+- Fully autonomous factories
+- Advanced predictive maintenance
+- Personalized / on-demand manufacturing
+- Expanded collaborative AI and Edge Computing
+- Strong focus on sustainability and circular economy
+
+### Final Conclusion of Module 3
+
+Artificial Intelligence is redefining manufacturing by enabling intelligent, flexible, human-centered, and sustainable production systems. Despite existing challenges, AI remains a key driver toward the factories of the future.
+
+---
+
+## 🛠️ Tools & Technologies Used
+
+- **Python**
+- **Scikit-learn** (Random Forest Classifier)
+- Data Balancing Techniques (Class Weights, Oversampling, Undersampling)
+- **P-rob 2** Industrial Robot
+- Motion Planning & Gripper Control
+- Machine Learning Evaluation Metrics
+- Concepts of Deep Learning, Digital Twins, Edge AI, and Explainable AI
+
+---
+
+**Project Status:** Completed  
+**Focus Areas:** Flexible Automation • Machine Learning • Industrial Robotics • AI in Manufacturing
+```
